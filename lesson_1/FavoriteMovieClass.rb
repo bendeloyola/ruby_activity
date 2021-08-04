@@ -1,4 +1,4 @@
-class FavoriteMovie
+class FavoriteMovieClass
 
     def initialize(name, movie, year)
         @name = name
@@ -11,5 +11,5 @@ class FavoriteMovie
     end
 end
 
-lionKing = FavoriteMovie.new("ben", "Lion King", 1994)
+lionKing = FavoriteMovieClass.new("ben", "Lion King", 1994)
 lionKing.watching
