@@ -11,5 +11,5 @@ class FavoriteMovieClass
   end
 end
 
-lionKing = FavoriteMovieClass.new("ben", "Lion King", 1994)
-lionKing.watching
+lion_king = FavoriteMovieClass.new("ben", "Lion King", 1994)
+lion_king.watching
