@@ -18,10 +18,10 @@ end
 
 
 vehicle = Vehicle.new
-vehicle.vehicle_type()
+vehicle.vehicle_type
 
 vehicle = Car.new
-vehicle.vehicle_type()
+vehicle.vehicle_type
 
 vehicle = Truck.new
-vehicle.vehicle_type()
+vehicle.vehicle_type
