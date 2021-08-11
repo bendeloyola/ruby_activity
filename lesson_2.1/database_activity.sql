@@ -12,9 +12,9 @@ VALUES(1, 'Juan', '', 'Cruz', 18, 'Manila'),
 UPDATE STUDENT SET first_name='Ivan', middle_name='Ingram', last_name='Howard', age=25, location='Bulacan'  WHERE id=1;
 
 DELETE FROM STUDENT WHERE id=6;
+-- end of activity 1 --
 
 -- start of activity 2 --
-
 SELECT COUNT(id) FROM STUDENT;
 
 SELECT * FROM STUDENT WHERE location = 'Manila';
@@ -22,11 +22,9 @@ SELECT * FROM STUDENT WHERE location = 'Manila';
 SELECT AVG(age) FROM STUDENT;
 
 SELECT * FROM STUDENT ORDER BY age DESC;
-
 -- end of activity 2 --
 
 -- start of activity 3 --
-
 CREATE TABLE CLASSROOMS(id INT NOT NULL PRIMARY KEY, student_id int, section varchar(255));
 
 INSERT INTO CLASSROOMS(id, student_id, section)
@@ -49,5 +47,4 @@ SELECT * FROM STUDENT AS s LEFT JOIN CLASSROOMS AS c ON s.id = c.student_id;
 SELECT * FROM STUDENT AS s RIGHT JOIN CLASSROOMS AS c ON s.id = c.student_id;
 
 SELECT * FROM STUDENT AS s FULL JOIN CLASSROOMS AS c ON s.id = c.student_id;
-
 -- end of activity 3 --
