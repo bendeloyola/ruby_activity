@@ -1,5 +1,5 @@
+--start of activity 1 --
 CREATE TABLE STUDENT (id INT NOT NULL PRIMARY KEY, first_name varchar(255) NOT NULL, middle_name varchar(255), last_name varchar(255) NOT NULL, age integer, location varchar(255) NOT NULL);
-
 
 INSERT INTO STUDENT(id, first_name, middle_name, last_name, age, location)
 VALUES 	(1, "jJuan", "", "Cruz", 18, "Manila"),
@@ -14,6 +14,10 @@ UPDATE STUDENT SET first_name="Ivan", middle_name="Ingram", last_name="Howard", 
 
 DELETE FROM STUDENT WHERE id=6;
 
+-- end of activity 1 --
+
+--start of activity 2 --
+
 SELECT COUNT(id) FROM STUDENT;
 
 SELECT * FROM STUDENT WHERE location = "Manila";
@@ -21,3 +25,5 @@ SELECT * FROM STUDENT WHERE location = "Manila";
 SELECT AVG(age) FROM STUDENT;
 
 SELECT * FROM STUDENT ORDER BY age DESC;
+
+-- end of activity 2 --
